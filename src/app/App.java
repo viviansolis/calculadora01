@@ -4,12 +4,16 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        Calculos cal  = new Calculos();
+        Calculos op = new Calculos();
         Scanner sc = new Scanner(System.in);
-        System.out.println("X1: ");
-        double a = sc.nextDouble();
-        System.out.println("X2: ");
-        double b = sc.nextDouble();
-        System.out.println("La suma es  :"+ cal.suma(a, b));
+        System.out.println("X: ");
+        double x = sc.nextDouble();
+        System.out.println("Y: ");
+        double y = sc.nextDouble();
+        System.out.println("La suma es: "+op.suma(x, y));
+        System.out.println("La resta es: "+op.resta(x, y));
+        System.out.println("La multiplicación es: "+op.multiplicacion(x, y));
+        System.out.println("La division es: "+op.division(x, y));
+        sc.close();
     }
 }
